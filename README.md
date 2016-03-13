@@ -5,8 +5,8 @@ The repsitory contains the following items:
 It also describes in detail the modifications done to the original dataset and order to obtain
 the cleaned dataset (*Cleaned_data.txt*)
 
-- cleandata.R This is the R script that loads the original dataset, performs the variable selection,
+- run_analysis.R This is the R script that loads the original dataset, performs the variable selection,
 the merging of training and test dataset and the calculation of the averages of all variables by subject and
 activity ID. The script also saves the cleaned dataset.
 
-- Cleaned_data.txt This is the tidy/cleaned dataset that is the output of cleandata.R
+- Cleaned_data.txt This is the tidy/cleaned dataset that is the output of run_analysis.R
