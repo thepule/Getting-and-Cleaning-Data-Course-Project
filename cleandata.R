@@ -2,7 +2,7 @@
 # Getting and cleaning data course project - Coursera
 # The script loads the wearable computing data set, perform a selection
 # of the variable (only mean measures), mearges training and test subsets,
-# and calculates the mean of all variables by subject.
+# and calculates the mean of all variables by subject and activity.
 #
 # Date: 13/03/2016
 # ------------------------------------------------------------------------
@@ -57,8 +57,6 @@ data <- rbind(
       summarise_each(funs(mean)) 
 
 # Cleaning up variables names
-## Removes t or f at the beginning of the name. Non neccessary anymore to distinguish train and test 
-names(data) <- gsub("^[tf]", "", names(data)) 
 ## Since the variables represent averages by subject and activity, the names need to be
 ## alter to reflect that. The prefix "Avg_" is added to all variables names.
 var_names <- names(data)[3:length(names(data))]
